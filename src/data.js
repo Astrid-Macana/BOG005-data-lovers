@@ -30,10 +30,8 @@ export const countryData = (athletes) => {
     for (const country of(athletes.athletes)) {
         countriesArray.push(country.team);
     }
-    console.log(countriesArray)
     return countriesArray
         .filter((country, pos) => {
-            console.log(countriesArray.indexOf(country) == pos)
             return countriesArray.indexOf(country) == pos;
         })
         .sort(); //permite organizar de menor a mayor un array
@@ -44,7 +42,6 @@ export const genderData = (athletes) => {
     for (const gender of athletes.athletes) {
         gendersArray.push(gender.gender);
     }
-    // console.log(gendersArray)
 
     return gendersArray
         .filter((gender, pos) => {

@@ -1,4 +1,3 @@
-
 import athletes from "./data/athletes/athletes.js";
 import { percentage, countryData, genderData, medalData, dataFilter, } from "./data.js";
 
@@ -95,7 +94,6 @@ function filterByCGM(order) {
     }
 
     if (arrayData.length > 0) {
-        console.log("mayor a 0");
         //mostrar pais y pocentaje de mujeres
         if (country !== "all") {
             document.getElementById("porcentajeWomen").innerHTML = porWomennn + "%" + "  " + " e Mujeres Participantes";
